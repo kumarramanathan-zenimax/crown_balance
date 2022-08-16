@@ -2,7 +2,7 @@
 # MAGIC %md
 # MAGIC 
 # MAGIC ### adobe_campaign_eso_vc_metrics_second
-# MAGIC **Title of notebook:** adobe_campaign_eso_vc_metrics                 
+# MAGIC **Title of notebook:** adobe_campaign_eso_vc_metrics_third                
 # MAGIC **Contact:**  Kumar Ramanathan        
 # MAGIC **Games:** ESO  
 # MAGIC **Notebook dependencies:**  
