@@ -121,7 +121,7 @@ WHERE
  ) derived_table3
  group by derived_table3.customer_identifier, derived_table3.txn_date, derived_table3.daily_crowns_ingested_total,
 derived_table3.daily_crowns_ingested_subs,
-derived_table3.daily_crowns_ingested_crownpacks"""
+derived_table3.daily_crowns_ingested_crownpacks limit 100"""
 
 df_eso_vc_metrics = spark.sql(sql_eso_vc_metrics)
 #display(df_eso_dlc)
