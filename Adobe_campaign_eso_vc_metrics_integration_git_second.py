@@ -1,8 +1,8 @@
 # Databricks notebook source
 # MAGIC %md
 # MAGIC 
-# MAGIC ### adobe_campaign_eso_vc_metrics
-# MAGIC **Title of notebook:** adobe_campaign_eso_vc_metrics                 
+# MAGIC ### adobe_campaign_eso_vc_metrics_second
+# MAGIC **Title of notebook:** adobe_campaign_eso_vc_metrics_third                
 # MAGIC **Contact:**  Kumar Ramanathan        
 # MAGIC **Games:** ESO  
 # MAGIC **Notebook dependencies:**  
@@ -121,7 +121,7 @@ WHERE
  ) derived_table3
  group by derived_table3.customer_identifier, derived_table3.txn_date, derived_table3.daily_crowns_ingested_total,
 derived_table3.daily_crowns_ingested_subs,
-derived_table3.daily_crowns_ingested_crownpacks"""
+derived_table3.daily_crowns_ingested_crownpacks limit 100"""
 
 df_eso_vc_metrics = spark.sql(sql_eso_vc_metrics)
 #display(df_eso_dlc)
@@ -169,6 +169,6 @@ for file in files2:
 
 # COMMAND ----------
 
-file_path = '/dbfs/mnt/bi-businessintelligence/adobe/integration/tosftp/vc_metrics/'
-file_name = 'crown_balance_000'
-adobe_encrypt_export_sftp(file_path,file_name,hostname_adobe,username_adobe,password_adobe,port_adobe,gpg_key_adobe,private_key_adobe)
+# file_path = '/dbfs/mnt/bi-businessintelligence/adobe/integration/tosftp/vc_metrics/'
+# file_name = 'crown_balance_000'
+# adobe_encrypt_export_sftp(file_path,file_name,hostname_adobe,username_adobe,password_adobe,port_adobe,gpg_key_adobe,private_key_adobe)
