@@ -169,6 +169,6 @@ for file in files2:
 
 # COMMAND ----------
 
-file_path = '/dbfs/mnt/bi-businessintelligence/adobe/integration/tosftp/vc_metrics/'
-file_name = 'crown_balance_000'
-adobe_encrypt_export_sftp(file_path,file_name,hostname_adobe,username_adobe,password_adobe,port_adobe,gpg_key_adobe,private_key_adobe)
+# file_path = '/dbfs/mnt/bi-businessintelligence/adobe/integration/tosftp/vc_metrics/'
+# file_name = 'crown_balance_000'
+# adobe_encrypt_export_sftp(file_path,file_name,hostname_adobe,username_adobe,password_adobe,port_adobe,gpg_key_adobe,private_key_adobe)
